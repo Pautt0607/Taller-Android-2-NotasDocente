@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:orientation="vertical" android:padding="24dp" android:background="@color/screen_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NOTAS DOCENTE" android:textSize="13sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tu espacio académico" android:textSize="28sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Inicia sesión o completa los tres campos para crear tu cuenta." android:textSize="16sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/email" android:text="Correo electrónico"/>
+            <EditText style="@style/AppField" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ejemplo: tu@correo.com" android:inputType="textEmailAddress" android:maxLines="1" android:importantForAutofill="no"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/clave" android:text="Contraseña"/>
+            <EditText style="@style/AppField" android:id="@+id/clave" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Escribe tu contraseña" android:inputType="textPassword" android:maxLines="1" android:importantForAutofill="no"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/nombre" android:text="Nombre (para registrarte)"/>
+            <EditText style="@style/AppField" android:id="@+id/nombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Escribe tu nombre" android:inputType="textPersonName" android:maxLines="1" android:importantForAutofill="no"/>
+            <Button style="@style/AppButton" android:id="@+id/entrar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Iniciar sesión"/>
+            <Button style="@style/AppButton" android:id="@+id/registrar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Crear mi cuenta"/>
+            <Button style="@style/AppButton" android:id="@+id/configurar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configurar servidor"/>
+            <ProgressBar android:id="@+id/progreso" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="4dp" android:indeterminate="true" android:visibility="gone"/>
+            <TextView android:id="@+id/estado" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="16sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

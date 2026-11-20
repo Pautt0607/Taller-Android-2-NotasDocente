@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:orientation="vertical" android:padding="24dp" android:background="@color/screen_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NOTAS DOCENTE" android:textSize="13sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Usuarios y mi perfil" android:textSize="28sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Edita tu cuenta y consulta los usuarios registrados." android:textSize="16sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/email" android:text="Correo"/>
+            <EditText style="@style/AppField" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ejemplo: tu@correo.com" android:inputType="textEmailAddress" android:maxLines="1" android:importantForAutofill="no" android:enabled="false"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/nombre" android:text="Tu nombre"/>
+            <EditText style="@style/AppField" android:id="@+id/nombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Escribe tu nombre" android:inputType="textPersonName" android:maxLines="1" android:importantForAutofill="no"/>
+            <TextView style="@style/AppFieldLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:labelFor="@+id/clave" android:text="Nueva contraseña (opcional)"/>
+            <EditText style="@style/AppField" android:id="@+id/clave" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Escribe tu contraseña" android:inputType="textPassword" android:maxLines="1" android:importantForAutofill="no"/>
+            <Button style="@style/AppButton" android:id="@+id/modificar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Guardar mi perfil"/>
+            <Button style="@style/AppButton" android:id="@+id/eliminar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eliminar mi cuenta"/>
+            <Button style="@style/AppButton" android:id="@+id/actualizar" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Actualizar listado"/>
+            <ProgressBar android:id="@+id/progreso" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="4dp" android:indeterminate="true" android:visibility="gone"/>
+            <TextView android:id="@+id/estado" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="16sp" android:textColor="@color/text_primary" android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <ListView android:id="@+id/lista" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="@color/field_background" android:divider="@color/button_border" android:dividerHeight="1dp"/>
+    <Button style="@style/AppButton" android:id="@+id/volver" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Volver al menú"/>
+</LinearLayout>
