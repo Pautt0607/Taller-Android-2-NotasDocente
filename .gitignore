@@ -1,0 +1,17 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+servidor/config.local.php
+tmp/
+__pycache__/
+output/
+.env
+.env.*
+*.jks
+*.keystore
+*guion*
+*Guion*
+*GUION*
+*guión*
+*Guión*
