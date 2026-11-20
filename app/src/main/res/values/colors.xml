@@ -1,0 +1,13 @@
+<resources>
+    <color name="screen_background">#F4F7FC</color>
+    <color name="field_background">#FFFFFF</color>
+    <color name="field_disabled_background">#EAF0F7</color>
+    <color name="text_primary">#172B4D</color>
+    <color name="text_secondary">#475569</color>
+    <color name="field_border">#7D91AD</color>
+    <color name="field_focus">#2563EB</color>
+    <color name="button_background">#DFEBFF</color>
+    <color name="button_pressed">#C6DAFC</color>
+    <color name="button_border">#87A9DD</color>
+    <color name="button_text">#173C70</color>
+</resources>
